@@ -1,7 +1,7 @@
 # Data-Ingestion-Processing-Pipeline
-📊 Data Ingestion & Processing Pipeline
+ Data Ingestion & Processing Pipeline
 
-📌 Project Overview
+ Project Overview
 
 This project implements a data engineering pipeline that extracts, processes, and stores structured data from multiple sources. The goal is to simulate a real-world data workflow where raw data is collected, cleaned, validated, and saved for downstream analysis.
 
@@ -14,7 +14,7 @@ The pipeline integrates:
 
 ⸻
 
-🎯 Objective
+ Objective
 
 To build a robust and modular Python pipeline that:
 	•	Extracts data from an API
@@ -26,7 +26,7 @@ To build a robust and modular Python pipeline that:
 
 ⸻
 
-🗂️ Data Sources
+ Data Sources
 
 1. API Data
 	•	Source: https://jsonplaceholder.typicode.com/users
@@ -54,7 +54,7 @@ Scraping Requirements:
 
 ⸻
 
-⚙️ Pipeline Architecture
+ Pipeline Architecture
 
 The pipeline is built using modular functions:
 fetch_api_data()
@@ -63,7 +63,7 @@ clean_data()
 save_data()
 main()
 
-🔄 Pipeline Flow
+ Pipeline Flow
 def main():
     users = fetch_api_data()
     books = scrape_books_data()
@@ -85,7 +85,7 @@ The clean_data() function performs:
 
 ⸻
 
-🛡️ Error Handling
+ Error Handling
 
 The pipeline uses try/except blocks to handle:
 	•	API request failures
@@ -122,7 +122,7 @@ Additional validation checks include:
 
 ⸻
 
-📁 Output Files
+ Output Files
 
 The pipeline generates the following files:
 	•	users.csv → Cleaned API data
@@ -130,8 +130,8 @@ The pipeline generates the following files:
 
 ⸻
 
-🛠️ Technologies Used
-	•	Python 🐍
+ Technologies Used
+	•	Python 
 	•	pandas
 	•	requests
 	•	BeautifulSoup (bs4)
@@ -139,7 +139,7 @@ The pipeline generates the following files:
 
 ⸻
 
-🚀 How to Run the Project
+ How to Run the Project
 	1.	Install required libraries:
   pip install pandas requests beautifulsoup4
   2.	Run the Jupyter Notebook or Python script
@@ -150,7 +150,7 @@ The pipeline generates the following files:
 
 ⸻
 
-📌 Deliverables
+ Deliverables
 
 This repository contains:
 	•	Python script (.py)
@@ -161,7 +161,7 @@ This repository contains:
 
 ⸻
 
-💡 Conclusion
+ Conclusion
 
 This project demonstrates a complete data engineering pipeline with:
 	•	Modular design
