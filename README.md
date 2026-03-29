@@ -1,7 +1,7 @@
 # Data-Ingestion-Processing-Pipeline
- Data Ingestion & Processing Pipeline
+### Data Ingestion & Processing Pipeline
 
- Project Overview
+ ## Project Overview
 
 This project implements a data engineering pipeline that extracts, processes, and stores structured data from multiple sources. The goal is to simulate a real-world data workflow where raw data is collected, cleaned, validated, and saved for downstream analysis.
 
@@ -14,7 +14,7 @@ The pipeline integrates:
 
 ⸻
 
- Objective
+## Objective
 
 To build a robust and modular Python pipeline that:
 	•	Extracts data from an API
@@ -26,9 +26,9 @@ To build a robust and modular Python pipeline that:
 
 ⸻
 
- Data Sources
+## Data Sources
 
-1. API Data
+#### 1. API Data
 	•	Source: https://jsonplaceholder.typicode.com/users
 	•	Extracted Fields:
 	•	name
@@ -39,14 +39,14 @@ To build a robust and modular Python pipeline that:
 
 ⸻
 
-2. Web Scraped Data
+#### 2. Web Scraped Data
 	•	Source: https://books.toscrape.com/
 	•	Extracted Fields:
 	•	title
 	•	price
 	•	rating
 
-Scraping Requirements:
+#### Scraping Requirements:
 	•	Scraped at least 5 pages
 	•	Converted:
 	•	Price → float (removed currency symbol)
@@ -54,7 +54,7 @@ Scraping Requirements:
 
 ⸻
 
- Pipeline Architecture
+ #### Pipeline Architecture
 
 The pipeline is built using modular functions:
 fetch_api_data()
@@ -63,7 +63,7 @@ clean_data()
 save_data()
 main()
 
- Pipeline Flow
+ #### Pipeline Flow
 def main():
     users = fetch_api_data()
     books = scrape_books_data()
@@ -85,7 +85,7 @@ The clean_data() function performs:
 
 ⸻
 
- Error Handling
+## Error Handling
 
 The pipeline uses try/except blocks to handle:
 	•	API request failures
@@ -96,7 +96,7 @@ The pipeline uses try/except blocks to handle:
 
 ⸻
 
-📋 Logging
+#### Logging
 
 The pipeline uses Python’s logging module to track:
 	•	Pipeline start
@@ -105,14 +105,14 @@ The pipeline uses Python’s logging module to track:
 	•	Errors encountered
 	•	Pipeline completion
 
-Example log output:
+#### Example log output:
 INFO - Pipeline started
 INFO - API extraction success
 INFO - Scraping success for page 1
 ERROR - Missing field in API data
 INFO - Pipeline completed successfully
 
-Data Validation (Bonus)
+## Data Validation (Bonus)
 
 Additional validation checks include:
 	•	Detecting empty datasets before processing
@@ -122,7 +122,7 @@ Additional validation checks include:
 
 ⸻
 
- Output Files
+#### Output Files
 
 The pipeline generates the following files:
 	•	users.csv → Cleaned API data
@@ -161,7 +161,7 @@ This repository contains:
 
 ⸻
 
- Conclusion
+## Conclusion
 
 This project demonstrates a complete data engineering pipeline with:
 	•	Modular design
